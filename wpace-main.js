@@ -3,7 +3,7 @@
       const imagens = document.querySelectorAll('img');
 
       imagens.forEach(imagem => {
-        imagem.classList.add('shake');
+        imagem.classList.add('shk891');
       });
     }
 
