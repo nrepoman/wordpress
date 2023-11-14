@@ -1,25 +1,22 @@
-console.log('status... ok');
-
-/* 
-
 function substituirTermo(element) {
     if (element.nodeType === Node.TEXT_NODE) {
         let texto = element.textContent;
         let novoTexto = texto.replace(/Boa Vista/g, 'Broa Vista');
+        novoTexto = novoTexto.replace(/gratuito/g, 'gratuiro');
         element.textContent = novoTexto;
     } else if (element.nodeType === Node.ELEMENT_NODE) {
-        // Se for um elemento, chama recursivamente para seus filhos
         for (let i = 0; i < element.childNodes.length; i++) {
             substituirTermo(element.childNodes[i]);
         }
     }
 }
 
-
-function substituirTermoEmTodoDocumento() {
-    substituirTermo(document.body);
+function substituirTermosNaPaginaEspecifica() {
+    if (window.location.href === 'https://www.acesaojoao.com.br/portal/natal-magico/') {
+        substituirTermo(document.body);
+    } else {
+        console.log('Not working in this page.');
+    }
 }
 
-substituirTermoEmTodoDocumento();
-
-*/
+substituirTermosNaPaginaEspecifica();
