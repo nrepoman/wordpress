@@ -1,3 +1,7 @@
+console.log('status... ok');
+
+/* 
+
 function substituirTermo(element) {
     if (element.nodeType === Node.TEXT_NODE) {
         let texto = element.textContent;
@@ -18,3 +22,4 @@ function substituirTermoEmTodoDocumento() {
 
 substituirTermoEmTodoDocumento();
 
+*/
