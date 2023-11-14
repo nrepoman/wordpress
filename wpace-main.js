@@ -1,4 +1,4 @@
-
+/*
     if (window.location.href === 'https://www.acesaojoao.com.br/portal/natal-magico/') {
       const imagens = document.querySelectorAll('img');
 
@@ -7,3 +7,4 @@
       });
     }
 
+*/
